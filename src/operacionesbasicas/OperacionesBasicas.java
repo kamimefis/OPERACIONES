@@ -1,31 +1,44 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package operacionesbasicas;
 
-/**
- *
- * @author Lila
- */
 public class OperacionesBasicas {
+    
+    private int a;
+    private int b;
 
-  
-        public int sumar(int a, int b){
-        return a+b;
+    public OperacionesBasicas() {
+    }
+
+    public OperacionesBasicas(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+    
+    public int Sumar(){
+        if(a==0 || b==0){
+            return 0;
         }
-        public int restar(int a, int b){
-        return a-b;
+        return this.a + this.b;
+    }
+    
+    public int Restar(){
+        if(b>a){
+            return 0;
         }
-        public int multiplicar(int a, int b){
-        return a*b;
+        return this.a - this.b;
+    }
+    
+    public int Multiplicar(){
+        if(b==0){
+            return 1;
         }
-       
-        public int dividir(int a, int b){
-        return a/b;
+        return this.a * this.b;
+    }
+    
+    public int Dividir(){
+        if(b==0){
+            return 0;
         }
-       
-        
+        return this.a / this.b;
+    }  
     
 }
